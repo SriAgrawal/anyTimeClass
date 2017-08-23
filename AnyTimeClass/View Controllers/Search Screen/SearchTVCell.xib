@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="advent-pro.medium.ttf">
+            <string>AdventPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="51" id="KGk-i7-Jjw" customClass="SearchTVCell">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E91-Vb-zjI">
+                        <rect key="frame" x="15" y="19" width="570" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="csA-44-jrR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AdventPro-Medium" family="Advent Pro" pointSize="18"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pJ-tX-3DY">
+                        <rect key="frame" x="0.0" y="53" width="600" height="1"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="7Vd-h4-JGF"/>
+                            <constraint firstAttribute="height" constant="1" id="E1N-Va-9jH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="E91-Vb-zjI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Ec0-lh-HKt"/>
+                    <constraint firstItem="1pJ-tX-3DY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="L5f-JX-ghb"/>
+                    <constraint firstAttribute="trailing" secondItem="1pJ-tX-3DY" secondAttribute="trailing" id="MMZ-xu-o2m"/>
+                    <constraint firstAttribute="trailing" secondItem="E91-Vb-zjI" secondAttribute="trailing" constant="15" id="aSE-z0-ybQ"/>
+                    <constraint firstItem="1pJ-tX-3DY" firstAttribute="top" secondItem="E91-Vb-zjI" secondAttribute="bottom" constant="13" id="oJV-fX-oMa"/>
+                    <constraint firstItem="E91-Vb-zjI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="szC-U3-der"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="E91-Vb-zjI" id="dVQ-9q-Dg7"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="55.5"/>
+        </tableViewCell>
+    </objects>
+</document>

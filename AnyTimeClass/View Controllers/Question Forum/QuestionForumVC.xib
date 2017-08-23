@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BreeSerif-Bold.ttf">
+            <string>BreeSerifW01-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuestionForumVC">
+            <connections>
+                <outlet property="containerView" destination="cuM-Gs-xfE" id="EgV-D4-C59"/>
+                <outlet property="toolBar" destination="JGb-12-R5s" id="rSw-eQ-gkD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHD-mq-IMp">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Forum" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZz-Ln-iGQ">
+                            <rect key="frame" x="87" y="22" width="201" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="Tui-Cp-klL"/>
+                                <constraint firstAttribute="width" constant="201" id="fsQ-Vx-u6T"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="BreeSerifW01-Bold" family="BreeSerifW01-Bold" pointSize="19"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ww-np-Vig">
+                            <rect key="frame" x="8" y="16" width="66" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="EfH-OV-L68"/>
+                                <constraint firstAttribute="width" constant="66" id="qjb-cU-bOn"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="25" maxY="0.0"/>
+                            <state key="normal" image="n1"/>
+                            <connections>
+                                <action selector="menuBtnAction:" destination="-1" eventType="touchUpInside" id="beq-oS-jhX"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.83529411760000005" green="0.1215686275" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="cZz-Ln-iGQ" firstAttribute="top" secondItem="bHD-mq-IMp" secondAttribute="top" constant="22" id="2s4-JH-DL2"/>
+                        <constraint firstItem="2ww-np-Vig" firstAttribute="top" secondItem="bHD-mq-IMp" secondAttribute="top" constant="16" id="7A4-wP-pA8"/>
+                        <constraint firstAttribute="height" constant="64" id="Aba-Re-ZaQ"/>
+                        <constraint firstItem="cZz-Ln-iGQ" firstAttribute="centerX" secondItem="bHD-mq-IMp" secondAttribute="centerX" id="OGb-HH-VL5"/>
+                        <constraint firstItem="2ww-np-Vig" firstAttribute="leading" secondItem="bHD-mq-IMp" secondAttribute="leading" constant="8" id="wHb-6d-YIb"/>
+                    </constraints>
+                </view>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGb-12-R5s">
+                    <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="U26-Qs-GTM"/>
+                    </constraints>
+                    <items/>
+                </toolbar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuM-Gs-xfE">
+                    <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cuM-Gs-xfE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="36g-RO-p8k"/>
+                <constraint firstItem="bHD-mq-IMp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3gE-0p-XrP"/>
+                <constraint firstAttribute="trailing" secondItem="JGb-12-R5s" secondAttribute="trailing" id="Avx-Om-s25"/>
+                <constraint firstItem="bHD-mq-IMp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Fps-06-Hgk"/>
+                <constraint firstAttribute="trailing" secondItem="bHD-mq-IMp" secondAttribute="trailing" id="UUU-9H-Vnj"/>
+                <constraint firstAttribute="trailing" secondItem="cuM-Gs-xfE" secondAttribute="trailing" id="VgD-bd-sLv"/>
+                <constraint firstItem="cuM-Gs-xfE" firstAttribute="top" secondItem="JGb-12-R5s" secondAttribute="bottom" id="WDZ-VQ-Nvb"/>
+                <constraint firstItem="JGb-12-R5s" firstAttribute="top" secondItem="bHD-mq-IMp" secondAttribute="bottom" id="eAu-Uf-DK7"/>
+                <constraint firstItem="JGb-12-R5s" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oDY-B4-eKE"/>
+                <constraint firstAttribute="bottom" secondItem="cuM-Gs-xfE" secondAttribute="bottom" id="pFO-fn-yNr"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="109.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="n1" width="22" height="18"/>
+    </resources>
+</document>

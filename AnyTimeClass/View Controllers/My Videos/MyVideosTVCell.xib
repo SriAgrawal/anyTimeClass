@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="advent-pro.medium.ttf">
+            <string>AdventPro-Medium</string>
+        </array>
+        <array key="advent-pro.regular.ttf">
+            <string>AdventPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="110" id="KGk-i7-Jjw" customClass="MyVideosTVCell">
+            <rect key="frame" x="0.0" y="0.0" width="492" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="492" height="109"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video" translatesAutoresizingMaskIntoConstraints="NO" id="Y7s-n1-ZUC">
+                        <rect key="frame" x="8" y="8" width="90" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="dVp-eV-ilq"/>
+                            <constraint firstAttribute="height" constant="90" id="zUg-JH-a7M"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accountancy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZcP-f3-ghB">
+                        <rect key="frame" x="115" y="24" width="293" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="RaQ-l6-wyB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AdventPro-Medium" family="Advent Pro" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CPT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hv8-g5-TfB">
+                        <rect key="frame" x="115" y="49" width="293" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="wLi-wv-SGn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="AdventPro-Regular" family="Advent Pro" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DjB-rT-lFM">
+                        <rect key="frame" x="420" y="29" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="BQ2-1b-f8L"/>
+                            <constraint firstAttribute="width" constant="48" id="OaG-V6-vot"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="79Y-6K-W25">
+                        <rect key="frame" x="31" y="33" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="GBe-hJ-PCO"/>
+                            <constraint firstAttribute="width" constant="40" id="vZD-Ya-3vN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixm-Ip-M67">
+                        <rect key="frame" x="0.0" y="103" width="492" height="1"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="nTa-Op-NOE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ixm-Ip-M67" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6gO-WK-HnW"/>
+                    <constraint firstItem="Y7s-n1-ZUC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="7Ub-5x-JhU"/>
+                    <constraint firstItem="ZcP-f3-ghB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="C2S-mp-ov5"/>
+                    <constraint firstAttribute="trailing" secondItem="DjB-rT-lFM" secondAttribute="trailing" constant="24" id="GwR-bg-Ss8"/>
+                    <constraint firstItem="Y7s-n1-ZUC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="I2c-Z7-9lC"/>
+                    <constraint firstItem="Hv8-g5-TfB" firstAttribute="leading" secondItem="Y7s-n1-ZUC" secondAttribute="trailing" constant="17" id="LVw-Br-Qdg"/>
+                    <constraint firstItem="79Y-6K-W25" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="33" id="P9E-Uj-aKs"/>
+                    <constraint firstItem="Hv8-g5-TfB" firstAttribute="top" secondItem="ZcP-f3-ghB" secondAttribute="bottom" constant="4" id="PBn-ap-kfZ"/>
+                    <constraint firstAttribute="trailing" secondItem="Ixm-Ip-M67" secondAttribute="trailing" id="Rmr-Jv-kMP"/>
+                    <constraint firstItem="79Y-6K-W25" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="31" id="W3W-t3-1sd"/>
+                    <constraint firstItem="ZcP-f3-ghB" firstAttribute="leading" secondItem="Y7s-n1-ZUC" secondAttribute="trailing" constant="17" id="d1X-aW-lUx"/>
+                    <constraint firstItem="DjB-rT-lFM" firstAttribute="leading" secondItem="Hv8-g5-TfB" secondAttribute="trailing" constant="12" id="n3L-vk-rEp"/>
+                    <constraint firstItem="Ixm-Ip-M67" firstAttribute="top" secondItem="Y7s-n1-ZUC" secondAttribute="bottom" constant="5" id="nQh-zh-Hxw"/>
+                    <constraint firstItem="DjB-rT-lFM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="29" id="qx4-0P-SjB"/>
+                    <constraint firstItem="DjB-rT-lFM" firstAttribute="leading" secondItem="ZcP-f3-ghB" secondAttribute="trailing" constant="12" id="vHU-pJ-w4u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="playerImageView" destination="79Y-6K-W25" id="ZDb-Zg-Hjn"/>
+                <outlet property="statusImageView" destination="DjB-rT-lFM" id="h8N-LB-5NS"/>
+                <outlet property="subjectLabel" destination="ZcP-f3-ghB" id="hRn-Lg-pkw"/>
+                <outlet property="titleImageView" destination="Y7s-n1-ZUC" id="pVK-Vf-BdV"/>
+                <outlet property="typeLabel" destination="Hv8-g5-TfB" id="Drd-LZ-fS0"/>
+            </connections>
+            <point key="canvasLocation" x="17" y="31"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="play" width="55" height="55"/>
+        <image name="video" width="108" height="94"/>
+    </resources>
+</document>

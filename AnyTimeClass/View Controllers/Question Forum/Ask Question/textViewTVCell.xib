@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="111" id="KGk-i7-Jjw" customClass="textViewTVCell">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write your question here" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EAP-at-Bh7">
+                        <rect key="frame" x="30" y="2" width="340" height="102"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="102" id="tku-mL-u3R"/>
+                        </constraints>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqk-xj-GgY">
+                        <rect key="frame" x="30" y="107" width="340" height="1"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="0.5" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="7lJ-jr-rmw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*Current" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMi-LJ-PU0">
+                        <rect key="frame" x="30" y="114" width="340" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="RBG-P2-obH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.83529411760000005" green="0.1215686275" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Cqk-xj-GgY" secondAttribute="trailing" constant="30" id="0C6-of-40i"/>
+                    <constraint firstItem="EAP-at-Bh7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="87z-Jv-Lc6"/>
+                    <constraint firstItem="WMi-LJ-PU0" firstAttribute="top" secondItem="Cqk-xj-GgY" secondAttribute="bottom" constant="6" id="I0n-b9-kYn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WMi-LJ-PU0" secondAttribute="trailing" constant="22" id="Qos-hF-36L"/>
+                    <constraint firstItem="Cqk-xj-GgY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="b3s-EN-KBo"/>
+                    <constraint firstItem="Cqk-xj-GgY" firstAttribute="top" secondItem="EAP-at-Bh7" secondAttribute="bottom" constant="3" id="fIi-Oo-6NM"/>
+                    <constraint firstItem="WMi-LJ-PU0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="22" id="vK2-do-3Ci"/>
+                    <constraint firstItem="EAP-at-Bh7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="woG-FG-l1O"/>
+                    <constraint firstAttribute="trailing" secondItem="EAP-at-Bh7" secondAttribute="trailing" constant="30" id="ybB-Wm-cdh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellTextView" destination="EAP-at-Bh7" id="uWS-Y8-eyb"/>
+                <outlet property="errorLabel" destination="WMi-LJ-PU0" id="WAk-rV-CmD"/>
+                <outlet property="underLabel" destination="Cqk-xj-GgY" id="Rfr-Nr-Jgt"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="-1.5"/>
+        </tableViewCell>
+    </objects>
+</document>

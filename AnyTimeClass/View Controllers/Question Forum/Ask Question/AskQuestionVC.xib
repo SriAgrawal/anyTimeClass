@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BreeSerif-Bold.ttf">
+            <string>BreeSerifW01-Bold</string>
+        </array>
+        <array key="advent-pro.regular.ttf">
+            <string>AdventPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AskQuestionVC">
+            <connections>
+                <outlet property="footerView" destination="0fK-qe-bYg" id="tGr-5r-if5"/>
+                <outlet property="headerView" destination="mF8-iS-gxj" id="YN2-hR-8QH"/>
+                <outlet property="tableView" destination="ELa-qt-LNw" id="hS0-wE-aE6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ELa-qt-LNw" customClass="EDKeyboardAvoidingTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="OLi-lO-gEG"/>
+                        <outlet property="delegate" destination="-1" id="6EQ-Hx-NuS"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ELa-qt-LNw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8mG-eI-Ggx"/>
+                <constraint firstAttribute="trailing" secondItem="ELa-qt-LNw" secondAttribute="trailing" id="CTV-Ma-o1u"/>
+                <constraint firstItem="ELa-qt-LNw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PbE-BO-cga"/>
+                <constraint firstAttribute="bottom" secondItem="ELa-qt-LNw" secondAttribute="bottom" id="pna-HZ-5in"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="mF8-iS-gxj">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are willing to know what's your Question?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUU-Gc-dY9">
+                    <rect key="frame" x="15" y="73" width="345" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="47" id="Xz9-uZ-S6y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="AdventPro-Regular" family="Advent Pro" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="oUU-Gc-dY9" firstAttribute="top" secondItem="mF8-iS-gxj" secondAttribute="top" constant="73" id="2SI-5q-8HI"/>
+                <constraint firstAttribute="trailing" secondItem="oUU-Gc-dY9" secondAttribute="trailing" constant="15" id="4UA-U8-JfM"/>
+                <constraint firstItem="oUU-Gc-dY9" firstAttribute="leading" secondItem="mF8-iS-gxj" secondAttribute="leading" constant="15" id="GSF-kk-aOS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="516.5" y="-213"/>
+        </view>
+        <view contentMode="scaleToFill" id="0fK-qe-bYg">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="94"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzL-Dd-hl6">
+                    <rect key="frame" x="30" y="20" width="315" height="40"/>
+                    <color key="backgroundColor" red="0.83137254900000002" green="0.12549019610000001" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="FqB-Fh-Ru1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="BreeSerifW01-Bold" family="BreeSerifW01-Bold" pointSize="17"/>
+                    <state key="normal" title="Submit">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="submitBtnAction:" destination="-1" eventType="touchUpInside" id="1fw-7G-tJD"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="SzL-Dd-hl6" firstAttribute="top" secondItem="0fK-qe-bYg" secondAttribute="top" constant="20" id="0ot-kn-seU"/>
+                <constraint firstItem="SzL-Dd-hl6" firstAttribute="leading" secondItem="0fK-qe-bYg" secondAttribute="leading" constant="30" id="3TQ-Ax-88t"/>
+                <constraint firstAttribute="trailing" secondItem="SzL-Dd-hl6" secondAttribute="trailing" constant="30" id="7HK-Ws-ZlV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="513.5" y="155"/>
+        </view>
+    </objects>
+</document>

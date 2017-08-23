@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashVideoVC">
+            <connections>
+                <outlet property="videoView" destination="uaA-vW-qmP" id="qhU-Kl-kQ7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="uaA-vW-qmP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P1H-VQ-Aze">
+                            <rect key="frame" x="8" y="8" width="359" height="651"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="nextBtnAction:" destination="-1" eventType="touchUpInside" id="ZlU-dA-mb7"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="P1H-VQ-Aze" firstAttribute="leading" secondItem="uaA-vW-qmP" secondAttribute="leading" constant="8" id="5QL-LW-hI6"/>
+                        <constraint firstItem="P1H-VQ-Aze" firstAttribute="top" secondItem="uaA-vW-qmP" secondAttribute="top" constant="8" id="Mhg-nq-ubJ"/>
+                        <constraint firstAttribute="bottom" secondItem="P1H-VQ-Aze" secondAttribute="bottom" constant="8" id="Xhv-HZ-d9D"/>
+                        <constraint firstItem="P1H-VQ-Aze" firstAttribute="leading" secondItem="uaA-vW-qmP" secondAttribute="leading" constant="8" id="ebO-2T-L6Z"/>
+                        <constraint firstItem="P1H-VQ-Aze" firstAttribute="top" secondItem="uaA-vW-qmP" secondAttribute="top" constant="8" id="gwK-n2-IQr"/>
+                        <constraint firstAttribute="trailing" secondItem="P1H-VQ-Aze" secondAttribute="trailing" constant="8" id="jT6-ra-N4D"/>
+                        <constraint firstAttribute="bottom" secondItem="P1H-VQ-Aze" secondAttribute="bottom" constant="8" id="lL0-1I-VxD"/>
+                        <constraint firstAttribute="trailing" secondItem="P1H-VQ-Aze" secondAttribute="trailing" constant="8" id="qDs-QU-3ya"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="uaA-vW-qmP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="732-pN-88W"/>
+                <constraint firstItem="uaA-vW-qmP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="G4Y-qL-yJJ"/>
+                <constraint firstAttribute="bottom" secondItem="uaA-vW-qmP" secondAttribute="bottom" id="Kk3-d1-eWf"/>
+                <constraint firstItem="uaA-vW-qmP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MJh-rr-EiK"/>
+                <constraint firstAttribute="bottom" secondItem="uaA-vW-qmP" secondAttribute="bottom" id="Rva-oS-lEr"/>
+                <constraint firstItem="uaA-vW-qmP" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="SrU-bg-abR"/>
+                <constraint firstItem="uaA-vW-qmP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ksa-bx-lgJ"/>
+                <constraint firstAttribute="trailing" secondItem="uaA-vW-qmP" secondAttribute="trailing" id="rp6-l8-agd"/>
+                <constraint firstItem="uaA-vW-qmP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yCs-QK-ZpC"/>
+                <constraint firstAttribute="trailing" secondItem="uaA-vW-qmP" secondAttribute="trailing" id="yNg-yd-pae"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="105.5"/>
+        </view>
+    </objects>
+</document>
